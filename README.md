@@ -1,12 +1,41 @@
-# React + Vite
+#  Books Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Quoti est une application web développée avec React.js pour le frontend et NestJS pour le backend. Elle permet de gérer une librairie de citations tirées de livres que nous aimons, avec des fonctionnalités complètes pour la gestion des : Auteurs, Livres,Citations,Utilisateurs,Catégories....
 
-Currently, two official plugins are available:
+## Fonctionnalités principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Création, modification, suppression et consultation des auteurs et des livres
 
-## Expanding the ESLint configuration
+- Association d’auteurs à des livres
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Ajout de citations à partir des livres
+
+- Organisation des citations par catégories
+
+- Authentification des utilisateurs (email et Google OAuth)
+
+##  Stack technique
+
+- React.js
+- @tanstack/react-query
+-react-router
+- Axios
+- Vite
+- Tailwind CSS 
+- react-hook-form
+- postman
+- Backend : un api de nestJs,prisma orm
+
+##  Structure du projetsrc/
+│
+├── api/ # Fonctions Axios pour les appels API
+├── hooks/ # Custom hooks avec React Query
+├── page/ # Pages principales (Authors, Books, Login...)
+├── store/ # (optionnel) État global, Zustand
+└── main.jsx # Point d'entrée de l'application
+
+##  Lancer l'application
+
+```bash
+npm install
+npm run dev
